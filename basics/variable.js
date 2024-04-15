@@ -71,7 +71,32 @@
 // 7 types =>  String , Number , Boolean , null , undefine, symbol , BigInt
 // 2. Reference (Non-primitive) 
 
-// Array , objects , Functions 
+//  3 type = Array , objects , Functions 
+
+// const  heros = ["shaktiman" , "nagarjun" ,  "doga"];
+
+// let myObj = {
+//     name: "abhijeet",
+//     age : 20,
+// }
+
+// const myFunction = function(){
+//     console.log("hello to this repo");
+// }
+// console.log(myFunction);
 
 
+// MEMORIES
+// 1 . stack(used in Primitive one ), 2 . Heap(use in Non-Primitive) 
  
+let userOne = {
+    email : "abcede@gmail.com",
+    upi : "avhbhjf@ybl"
+};
+
+let uswrTwo = {
+    userOne,
+}
+userTwo.email = "raju@google.com"
+console.log(userOne.email);
+console.log(userTwo.email);
