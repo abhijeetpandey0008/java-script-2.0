@@ -89,14 +89,41 @@
 // MEMORIES
 // 1 . stack(used in Primitive one ), 2 . Heap(use in Non-Primitive) 
  
-let userOne = {
-    email : "abcede@gmail.com",
-    upi : "avhbhjf@ybl"
-};
+// let userOne = {
+//     email : "abcede@gmail.com",
+//     upi : "avhbhjf@ybl"
+// }
 
-let uswrTwo = {
-    userOne,
-}
-userTwo.email = "raju@google.com"
-console.log(userOne.email);
-console.log(userTwo.email);
+// let userTwo = userOne
+
+// userTwo.email = "raju@google.com"
+// console.log(userOne.email);
+// console.log(userTwo.email);
+
+// ***********STRINGS*********//
+
+//  let str1 = "hello"
+//  let str2 = "mylove"
+//  let str3 = str1 + str2 // this is called string concatenation 
+
+//  console.log(str3);
+
+// console.log(`hello this is ${str1} and mylove is ${str2}`);// this is modern way of string an dit is called string interpolletion 
+
+const gameName = new String('shyamul')
+console.log(gameName.length);   
+console.log(gameName.toUpperCase());
+console.log(gameName.charAt(4))
+console.log(gameName.indexOf('m'))
+
+const newString = gameName.substring(0,4) // last value will not be included  and we can pass -ve value in this if we pass it will simply ignore 
+
+console.log(newString)
+const anotherString = gameName.slice(-6 , 4) // in this we can pass the -ve value as well 
+console.log(anotherString);
+
+const newStringOne = "   abhijeet   "
+console.log(newStringOne)
+console.log(newStringOne.trim());
+// TRIM() =>  it is used in whitespace and line terminator to remove the extra space b/w the strungs and the line 
+// we also have replace( 'value', 'replaced by' ) function  to replace the value 
