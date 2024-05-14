@@ -75,15 +75,103 @@
 // console.log(a)
 
 
-function one(){
-    const username = "abhijeet "
-    function two(){
-        const website = "cnjsjheekeke"
-        console.log(username);
-    } // here two can access  all the variable  which is present in one 
-    //console.log(website);
-    two()
+// function one(){
+//     const username = "abhijeet "
+//     function two(){
+//         const website = "cnjsjheekeke"
+//         console.log(username);
+//     } // here two can access  all the variable  which is present in one 
+//     //console.log(website);
+//     two()
+// }
+// // one()
+
+// if (true){
+//     const username = "abhijeet"
+//     if(username === "abhijeet"){
+//         const website = "youtube"
+//         console.log(username + website);
+//     }
+//     //console.log(website);
+// }
+// // console.log(username);
+
+// +++++++++++++ interesting fact++++++++++++++++
+
+
+// console.log(addone(5))
+
+// function addone(num){
+//     return num + 1
+// }
+
+// addTwo(5) // we can not access this before becouse we  have hold this as variable during initialization 
+
+// const addTwo = function(num){
+//     return num+2
+// }
+
+// **************ARROW FUNCTIONS*************88
+// this() - it is used to reffer current context 
+
+//  const user  = {
+//     username: "abhijeet ",
+//     price: 999,
+//     welcomeMessage : function(){
+//         console.log(`${this.username} , welcome to website `);
+//        console.log(this);
+
+//     }
+//  }
+
+//  user.welcomeMessage()
+//  user.username = "sam"
+//  user.welcomeMessage()
+
+ // console.log(this);
+ // in browser  the global object is "WINDOW"
+
+// function chai(){
+//     console.log(this);
+
+// }
+// chai()
+
+const  chai  = () => { // way to declare the arrow function 
+    let username = "abhijeet"
+    console.log(this);
 }
-one()
+
+ // chai()
+ // arrow function
+
+ //const addTwo = (num1 , num2) =>{
+  //  return num1 + num2
+ //}
+
+ //console.log(addTwo(3,5));
+
+ // this is a way of implicite return where we do not need to write return
+//  const addTwo = (num1 , num2) => (num1 + num2) // if we wrapp in parenthesis then we do not need to write return 
+//  console.log(addTwo(3,5));
+
+// ***************Immediately Invoked Function Expression (IIFE)*********************
+
+// we use this to avoide the pollution from the global and the variables of the global  scope and to execute immediately 
+// we use ()()  for IIFE function  in 1st parenthesis() we write the definition of function 
+// in 2nd parenthesis we  use it for  the execution  call
+
+// (function chai() {
+//     // NAMED IIFE
+//     console.log(`DB CONNECTED`);
+
+// }) ();
+
+// // WE CAN ALSO  DO IT WITH THE ARROW FUNCTIONS
+
+// ((name) => {
+//     // SIMPLE IIFE
+//     console.log(`DB CONNECTED TWO  ${name}`);
+// }) ('ABHIJEET PANDEY')
 
 
